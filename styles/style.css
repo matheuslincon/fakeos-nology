@@ -1,17 +1,17 @@
 body {
-  background: url(../assets/imgs/windows.jpeg) top right no-repeat;
+  background: url(../assets/imgs/windows.jpg) top right no-repeat;
   background-attachment: fixed;
   background-size: 100%;
 }
 
 .navbar {
   display: flex;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #255cdb;
+  z-index: 100;
+  background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%) center/cover no-repeat;
   width: 100%;
-  height: 30px;
 }
 .navbar__start {
   width: 7%;
@@ -19,9 +19,15 @@ body {
 .navbar__start button {
   height: 100%;
   width: 100%;
-  background-color: #249b29;
+  padding: 5px 25px 5px 15px;
+  font-size: 18px;
+  font-style: italic;
   color: white;
-  border-radius: 5px;
+  text-shadow: 1px 1px 1px #333;
+  background: radial-gradient(circle, #5eac56 0%, #3c873c 100%) center/cover no-repeat;
+  box-shadow: 0px 5px 10px #79ce71 inset;
+  border-radius: 0 8px 8px 0;
+  border: none;
 }
 .navbar__work {
   width: 80%;
@@ -29,6 +35,35 @@ body {
 .navbar__time {
   width: 13%;
   background-color: #35b4f2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar__time span {
+  margin: 10px;
+}
+
+.icons {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+}
+.icons .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px 10px 0;
+}
+.icons .icon img {
+  width: 60px;
+}
+.icons .icon span {
+  color: white;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 
 /*# sourceMappingURL=style.css.map */
