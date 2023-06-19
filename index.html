@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./js/script.js" type="module" defer></script>
     <title>Fake OS - Windows XP</title>
 </head>
 <body>
     <main>
         <div class="taskbar">
             <div class="taskbar__start">
-                <button>start</button>
+                <button id="menuButton">start</button>
             </div>
-            <div class="taskbar__start-menu">
+            <div class="taskbar__start-menu" id="menuDisplay">
                 <div class="start-menu__header">
                     <div class="header__image-wrapper">
                         <img src="./assets/imgs/red flower.jpg" alt="flower">

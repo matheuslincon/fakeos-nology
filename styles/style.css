@@ -37,6 +37,7 @@
   -webkit-filter: drop-shadow(1px 1px 1px #333);
 }
 .taskbar__start-menu {
+  display: none;
   position: absolute;
   background-color: #245edb;
   width: 380px;
