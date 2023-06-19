@@ -1,0 +1,257 @@
+.taskbar {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%) center/cover no-repeat;
+    width: 100%;
+    &__start {
+        width: 7%;
+        button {
+            position: relative;
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            padding: 5px 25px 5px 15px;
+            font-size: 22px;
+            font-style: italic;
+            color: white;
+            text-shadow: 1px 1px 1px #333;
+            background: radial-gradient(circle, #5eac56 0%, #3c873c 100%) center/cover no-repeat;
+            box-shadow: 0px 5px 10px #79ce71 inset;
+            border-radius: 0 8px 8px 0;
+            border: none;
+            &::before {
+                content: '';
+                background: url("../assets/imgs/logo.png") center/cover no-repeat;
+                position: relative;
+                display: inline-block;
+                margin-right: 5px;
+                height: 20px;
+                width: 20px;
+                top: 1px;
+                -webkit-filter: drop-shadow(1px 1px 1px #333);
+            }
+        }
+    }
+    &__start-menu {
+        // display: none;
+        position: absolute;
+        background-color: #245edb;
+        width: 380px;
+        height: 550px;
+        left: 0;
+        bottom: 100%;
+        z-index: -50;
+        border-radius: 5px 5px 0px 0px;
+        box-shadow: 2px 6px 10px #333, -2px 0px 5px rgba(20, 20, 20, 0.6) inset, 2px 0px 3px #7fbce8 inset;
+        .start-menu__header {
+            display: flex;
+            align-items: center;
+            height: 65px;
+            box-shadow: 3px 2px 3px #7fbce8 inset;
+            background: linear-gradient(to bottom, #245edb 0%, #0c8dea 100%);
+            padding: 8px 0px 7px 8px;
+            .header__image-wrapper {
+                background-color: white;
+                border-radius: 5px;
+                padding: 2px;
+                height: 52px;
+                display: inline-block;
+                box-shadow: 2px 2px 4px #333;
+            }
+            img {
+                width: 48px;
+                height: 48px;
+            }
+            h2 {
+                display: inline-block;
+                color: white;
+                font-size: 18px;
+                font-weight: normal;
+                margin-left: 10px;
+                text-shadow: 0 0 3px #555;
+            }
+        }
+        .start-menu__body {
+            position: relative;
+            display: flex;
+            height: calc(100% - 65px - 43px);
+            background-color: white;
+            border: 1px solid #0c8dea;
+            margin: 0 1px;
+            overflow: hidden;
+            .body__favorites {
+                position: relative;
+                display: inline-flex;
+                flex-direction: column;
+                height: 100%;
+                width: 50%;
+                padding: 8px;
+                &__itens {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px;
+                    font-size: 11px;
+                    &__icons {
+                        height: 30px;
+                        width: 30px;
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    &__content {
+                        margin-left: 5px;
+                        h6 {
+                            font-size: 11px;
+                            font-weight: bold;
+                            color: #373738;
+                            margin: 0;
+                        }
+                        span {
+                            color: gray;
+                        }
+                    }
+                    &__item {
+                        margin-left: 5px;
+                        color: #373738;
+                    }
+                    &:hover {
+                        background-color: #3d64bd;
+                        h6 {
+                            color: white;
+                        }
+                        span {
+                            color: white;
+                        }
+                    }
+                }
+                .divider {
+                    margin: 5px 0px;
+                    height: 1px;
+                    background: linear-gradient(to right, white 0%, #d3d3c8 50%, white 100%) center/cover no-repeat;
+                }
+                &__all-programs {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 0px 8px 8px 8px;
+                    &__button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 11px;
+                        font-weight: bold;
+                        color: #373738;
+                        padding: 5px 0px;
+                        &::after {
+                            content: '';
+                            background: url(../assets/imgs/startarrow.png) center/contain no-repeat;
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            margin-left: 5px;
+                        }
+                        &:hover {
+                            background-color: #3d64bd;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .body__shortcuts {
+                display: inline-flex;
+                flex-direction: column;
+                height: 100%;
+                width: 50%;
+                padding: 8px;
+                background: #d3e5fa;
+                border-left: 1px solid #95bdee;
+                &__itens {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px;
+                    font-size: 11px;
+                    &__icons {
+                        height: 25px;
+                        width: 25px;
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    &__content {
+                        margin-left: 5px;
+                        h6 {
+                            font-size: 11px;
+                            font-weight: bold;
+                            color: #29356c;
+                            margin: 0;
+                        }
+                    }
+                    &__item {
+                        margin-left: 5px;
+                        color: #29356c;
+                    }
+                    &:hover {
+                        background-color: #3d64bd;
+                        h6 {
+                            color: white;
+                        }
+                        span {
+                            color: white;
+                        }
+                    }
+                }
+                .divider {
+                    margin: 5px 0px;
+                    height: 1px;
+                    background: linear-gradient(to right, transparent 0%, #aebad6 50%, transparent 100%) center/cover no-repeat;
+                }
+            }
+        }
+        .start-menu__footer {
+            height: 43px;
+            background: linear-gradient(to top, #245edb 0%, #0c8dea 100%);
+            box-shadow: -2px -2px 5px rgba(20, 20, 20, 0.6) inset;
+        }
+    }
+    &__work {
+        width: 83%;
+    }
+    &__time {
+        width: 10%;
+        background-color: #35b4f2;
+        box-shadow: 1px 1px 5px rgba(20, 20, 20, 0.6) inset;
+        border-left: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        &__icon {
+            height: 20px;
+            width: 20px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0 4px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        span {
+            margin: 0 15px 0 10px;
+            color: white;
+            font-size: 14px;
+        }
+    }
+}
