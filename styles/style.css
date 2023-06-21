@@ -8,7 +8,7 @@
   width: 100%;
 }
 .taskbar__start {
-  width: 7%;
+  width: 10%;
 }
 .taskbar__start button {
   position: relative;
@@ -227,10 +227,10 @@
   box-shadow: -2px -2px 5px rgba(20, 20, 20, 0.6) inset;
 }
 .taskbar__work {
-  width: 83%;
+  width: 74%;
 }
 .taskbar__time {
-  width: 10%;
+  width: 16%;
   background-color: #35b4f2;
   box-shadow: 1px 1px 5px rgba(20, 20, 20, 0.6) inset;
   border-left: 1px solid black;

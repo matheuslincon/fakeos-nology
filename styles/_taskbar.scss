@@ -7,7 +7,7 @@
     background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%) center/cover no-repeat;
     width: 100%;
     &__start {
-        width: 7%;
+        width: 10%;
         button {
             position: relative;
             display: inline-block;
@@ -226,10 +226,10 @@
         }
     }
     &__work {
-        width: 83%;
+        width: 74%;
     }
     &__time {
-        width: 10%;
+        width: 16%;
         background-color: #35b4f2;
         box-shadow: 1px 1px 5px rgba(20, 20, 20, 0.6) inset;
         border-left: 1px solid black;
