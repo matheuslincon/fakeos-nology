@@ -1,6 +1,7 @@
-@import './taskbar';
-@import './desktop-icons';
-@import './modal';
+@import './partials/taskbar';
+@import './partials/desktop-icons';
+@import './partials/modal';
+@import './partials/calculator';
 
 * {
     box-sizing: border-box;
