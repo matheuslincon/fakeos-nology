@@ -35,8 +35,8 @@ export const createModal = () => {
     modalDiv.appendChild(headerDiv)
     modalDiv.appendChild(contentDiv)
 
+
     desktopApps.appendChild(modalDiv)
-    return modalDiv;
 }
 
 export const deleteModal = (modal) => {
