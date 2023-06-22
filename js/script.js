@@ -5,12 +5,16 @@ import { createModal, deleteModal} from "./dom-utils/modal.js";
 import { createCalc } from "./dom-utils/createCalc.js";
 import { toggleCalc } from './utils/calc-app.js';
 import { toggleMedia } from './utils/media-app.js'
+import { toggleGallery } from './utils/media-toggle.js'
+import { popUp } from './utils/gallery-popup.js';
 
 const menuButton = document.getElementById('menuButton');
 const calculator = document.getElementById('calculator');
 const media = document.getElementById('mediaPlayer');
+const myPictures = document.getElementById('myPictures');
 const closeButtonCalc = document.getElementById('closeCalc');
 const closeButtonMedia = document.getElementById('closeMedia');
+const closeButtonGallery = document.getElementById('closeGallery');
 
 menuButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -26,9 +30,12 @@ calculator.addEventListener("click", (e) => {
 
 media.addEventListener("click", (e) => {
     e.preventDefault();
-    // createModal();
-    // createCalc();
     toggleMedia();
+})
+
+myPictures.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggleGallery();
 })
 
 closeButtonCalc.addEventListener("click", (e) => {
@@ -43,5 +50,12 @@ closeButtonMedia.addEventListener("click", (e) => {
     mediaDiv.style.display = 'none';
 })
 
+closeButtonGallery.addEventListener("click", (e) => {
+    e.preventDefault();
+    const galleryDiv = document.getElementById('galleryDiv');    
+    galleryDiv.style.display = 'none';
+})
+
 currentTime();
 calculatorApp();
+popUp();

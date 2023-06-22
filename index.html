@@ -212,7 +212,7 @@
                 <img src="./assets/imgs/calculator.png" alt="Calculator">
                 <span>Calculator</span>
             </div>
-            <div class="icon">
+            <div id="myPictures" class="icon">
                 <img src="./assets/imgs/myPictures.png" alt="my pictures">
                 <span>My Pictures</span>
             </div>
@@ -220,7 +220,7 @@
         <div id="desktopApps" class="desktop-apps">
             <div id="calcDiv" class="calc-modal">
                 <div class="calc-modal__header">
-                    <div class="header-text">Modal</div>
+                    <div class="header-text">Calculator</div>
                     <div class="header-buttons">
                         <button>-</button>
                         <button>□</button>
@@ -256,7 +256,7 @@
             </div>
             <div id="mediaDiv" class="media-modal">
                 <div class="media-modal__header">
-                    <div class="header-text">Modal</div>
+                    <div class="header-text">Media Player</div>
                     <div class="header-buttons">
                         <button>-</button>
                         <button>□</button>
@@ -273,6 +273,37 @@
                                 <source src="./assets/music/Faint (Official Music Video) [4K UPGRADE] – Linkin Park.mp3">
                                 <source src="./assets/music/Oasis - Falling Down (Official Video).mp3">
                             </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="galleryDiv" class="gallery-modal">
+                <div class="gallery-modal__header">
+                    <div class="header-text">My Pictures</div>
+                    <div class="header-buttons">
+                        <button>-</button>
+                        <button>□</button>
+                        <button id="closeGallery">X</button>
+                    </div>
+                </div>
+                <div class="gallery-modal__content">
+                    <div class="gallery">
+                        <div class="gallery__grid">
+                            <img class="grid-img" src="./assets/imgs/gallery/photo1.jpeg">
+                            <img class="grid-img" src="./assets/imgs/gallery/photo2.jpeg">
+                            <img class="grid-img" src="./assets/imgs/gallery/photo3.jpeg">
+                            <img class="grid-img" src="./assets/imgs/gallery/photo4.jpeg">
+                            <img class="grid-img" src="./assets/imgs/gallery/photo5.jpeg">
+                            <img class="grid-img" src="./assets/imgs/gallery/photo6.jpeg">
+                            <img class="grid-img" src="./assets/imgs/gallery/photo7.jpeg">
+                            <img class="grid-img" src="./assets/imgs/gallery/photo8.jpeg">
+                            <img class="grid-img" src="./assets/imgs/gallery/photo9.jpeg">
+                            <img class="grid-img" src="./assets/imgs/gallery/photo10.jpeg">
+                            <img class="grid-img" src="./assets/imgs/gallery/photo11.jpeg">
+                            <img class="grid-img" src="./assets/imgs/gallery/photo12.jpeg">
+                        </div>
+                        <div id="popUp" class="gallery__popup">
+                            <img id="selectedImage" src="" alt="">
                         </div>
                     </div>
                 </div>
