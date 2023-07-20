@@ -1,0 +1,18 @@
+@import './partials/taskbar';
+@import './partials/desktop-icons';
+@import './partials/modal';
+@import './partials/calculator';
+@import './partials/media-player';
+@import './partials/gallery';
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background: url(../assets/imgs/windows.jpg) top right no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
